@@ -1,0 +1,246 @@
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* === Login Page === */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #1b5e20;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* === Layout === */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 230px;
+  background-color: #1b5e20;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 15px;
+}
+
+.sidebar-menu a {
+  display: block;
+  text-decoration: none;
+  background-color: #2e7d32;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background-color: #43a047;
+}
+
+/* === Main Content === */
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #f4f6f9;
+}
+
+.main-content h2 {
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+/* === Info Boxes === */
+.user-info, .balance-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.user-info p, .balance-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* === Package Buttons === */
+.package-section {
+  margin-bottom: 30px;
+}
+
+.package-section h3 {
+  margin-bottom: 15px;
+  color: #1b5e20;
+}
+
+.package-btn {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.package-btn:hover {
+  background-color: #388e3c;
+}
+
+.success-message {
+  color: #1b5e20;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* === Chart Controls === */
+.chart-toggle {
+  margin-bottom: 20px;
+}
+
+.chart-toggle button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chart-toggle button:hover {
+  background-color: #1b5e20;
+}
+
+/* === Table Styling (Recharge History) === */
+.recharge-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.recharge-table th,
+.recharge-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.recharge-table th {
+  background-color: #388e3c;
+  color: white;
+}
+
+.recharge-table tr:hover {
+  background-color: #f1f8e9;
+}
+
+/* === Notifications List === */
+.notification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-list li {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #4caf50;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.note-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.note-text {
+  font-size: 15px;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* === Scroll Fix for Long Pages === */
+.main-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background-color: #c8e6c9;
+  border-radius: 10px;
+}

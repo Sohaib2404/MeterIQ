@@ -1,0 +1,43 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | MeterIQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">MeterIQ</h2>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="buy-packages.html">Buy Packages</a></li>
+        <li><a href="consumption-history.html">Consumption History</a></li>
+        <li><a href="recharge-history.html">Recharge History</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>Welcome to MeterIQ</h2>
+
+      <div class="user-info">
+        <p><strong>Name:</strong> Wasif Ali</p>
+        <p><strong>Meter No:</strong> 80013491</p>
+        <p><strong>Meter Type:</strong> Domestic</p>
+      </div>
+
+      <div class="balance-box">
+        <p><strong>Electricity Balance:</strong> <span id="electricityBalance">--</span> kWh</p>
+        <p><strong>Gas Balance:</strong> <span id="gasBalance">--</span> m³</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

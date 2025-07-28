@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Consumption History | MeterIQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">MeterIQ</h2>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="buy-packages.html">Buy Packages</a></li>
+        <li><a href="consumption-history.html" class="active">Consumption History</a></li>
+        <li><a href="recharge-history.html">Recharge History</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h2>Consumption History</h2>
+
+      <div class="chart-toggle">
+        <button onclick="showChart('electricity', 'weekly')">Electricity – Weekly</button>
+        <button onclick="showChart('electricity', 'monthly')">Electricity – Monthly</button>
+        <button onclick="showChart('gas', 'weekly')">Gas – Weekly</button>
+        <button onclick="showChart('gas', 'monthly')">Gas – Monthly</button>
+      </div>
+
+      <canvas id="consumptionChart" width="600" height="300"></canvas>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

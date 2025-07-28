@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buy Packages | MeterIQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">MeterIQ</h2>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="buy-packages.html" class="active">Buy Packages</a></li>
+        <li><a href="consumption-history.html">Consumption History</a></li>
+        <li><a href="recharge-history.html">Recharge History</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h2>Select a Package</h2>
+
+      <div class="package-section">
+        <h3>Electricity Packages</h3>
+        <button class="package-btn" onclick="recharge('electricity', 5)">5 Units – Rs.351</button>
+        <button class="package-btn" onclick="recharge('electricity', 10)">10 Units – Rs.702</button>
+        <button class="package-btn" onclick="recharge('electricity', 20)">20 Units – Rs.1404</button>
+      </div>
+
+      <div class="package-section">
+        <h3>Gas Packages</h3>
+        <button class="package-btn" onclick="recharge('gas', 1)">1 m³ – Rs.234</button>
+        <button class="package-btn" onclick="recharge('gas', 2)">2 m³ – Rs.468</button>
+        <button class="package-btn" onclick="recharge('gas', 5)">5 m³ – Rs.1170</button>
+      </div>
+
+      <p id="rechargeConfirm" class="success-message"></p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

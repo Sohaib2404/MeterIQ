@@ -1,0 +1,43 @@
+<!-- recharge-history.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recharge History | MeterIQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">MeterIQ</h2>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="buy-packages.html">Buy Packages</a></li>
+        <li><a href="consumption-history.html">Consumption History</a></li>
+        <li><a href="recharge-history.html" class="active">Recharge History</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h2>Recharge History</h2>
+      <table class="recharge-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Utility</th>
+            <th>Units</th>
+            <th>Amount (Rs.)</th>
+          </tr>
+        </thead>
+        <tbody id="rechargeHistoryTable">
+          <!-- Data will be inserted via script.js -->
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Notifications | MeterIQ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">MeterIQ</h2>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="buy-packages.html">Buy Packages</a></li>
+        <li><a href="consumption-history.html">Consumption History</a></li>
+        <li><a href="recharge-history.html">Recharge History</a></li>
+        <li><a href="notifications.html" class="active">Notifications</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h2>System Notifications</h2>
+      <ul id="notificationsList" class="notification-list">
+        <!-- Notifications will be loaded via script.js -->
+      </ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

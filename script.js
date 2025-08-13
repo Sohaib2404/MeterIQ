@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loadNotifications(); // Call function to load notifications
         loadRechargeHistory(); // Call function to load history
       } else {
-        if (msg) msg.textContent = `Recharge failed: ${data.message}`;
+        msg.textContent = `Recharge failed: ${data.message}`;
         msg.style.color = 'red';
       }
     } catch (error) {
@@ -179,5 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ==== CHARTS ==== (No change needed here as data is local to script.js for now)
   // ... (existing chart code remains largely the same, unless you want chart data from backend)
+
 
 }); 
